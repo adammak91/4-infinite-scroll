@@ -24,7 +24,7 @@ const hidePreloader = () => {
 
 const getData = () => {
 
-  if (preloading) {
+  if (!preloading) {
 
     showPreloader();
     };
