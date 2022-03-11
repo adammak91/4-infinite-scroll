@@ -25,9 +25,9 @@ const hidePreloader = () => {
 const getData = () => {
 
   if (preloading) {
-    
-    showPreloader();
 
+    showPreloader();
+    };
     // console.log('getData()');
     fetch('https://akademia108.pl/api/ajax/get-users.php')
       .then(res => res.json())
@@ -61,7 +61,7 @@ const getData = () => {
       .catch(error => {
         console.log(error);
       });
-  }
+  
   preloading = true; 
   // console.log('getData()');
   fetch('https://akademia108.pl/api/ajax/get-users.php')
